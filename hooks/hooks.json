@@ -1,0 +1,24 @@
+{
+  "PostToolUse": [
+    {
+      "matcher": "Write|Edit",
+      "hooks": [
+        {
+          "type": "prompt",
+          "prompt": "文件修改检测。执行索引更新检查:\n\n**过滤规则** (满足任一条件则跳过):\n- 文件名为 PROJECT_INDEX.md 或 FOLDER_INDEX.md\n- 文件扩展名不是代码文件 (.js/.ts/.py/.java/.rs/.go/.cpp/.c/.h/.kt/.rb/.php/.swift/.cs)\n- 文件路径包含: node_modules, .git, dist, build, .next, target, vendor, __pycache__, .cache\n- 文件大小 > 500KB (性能保护)\n\n**结构变更判断** (需包含以下任一关键字):\n- 依赖: import, require, use, from, #include, using\n- 导出: export, public, class, interface, function, def, fn, async, struct\n\n**更新策略**:\n1. 检测到结构变更 → 更新文件头 + FOLDER_INDEX + PROJECT_INDEX\n2. 仅文件头变更 → 只更新文件头\n3. 其他情况 → 跳过\n\n**输出**: 静默处理，仅在重大变更时提示一行信息。\n\n详见 skills/project-multilevel-index/SKILL.md。"
+        }
+      ]
+    }
+  ],
+  "Stop": [
+    {
+      "matcher": "*",
+      "hooks": [
+        {
+          "type": "prompt",
+          "prompt": "会话结束检查: 如本次修改了 3+ 代码文件，简短询问用户是否需要 /check-index。保持简短，无明显问题则不提示。"
+        }
+      ]
+    }
+  ]
+}

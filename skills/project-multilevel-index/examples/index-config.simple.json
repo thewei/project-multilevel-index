@@ -1,0 +1,25 @@
+{
+  "description": "简化的配置示例 - 适合快速上手",
+
+  "exclude": {
+    "patterns": [
+      "**/node_modules/**",
+      "**/.git/**",
+      "**/dist/**",
+      "**/build/**"
+    ],
+    "useGitignore": true
+  },
+
+  "index": {
+    "autoUpdate": true,
+    "maxDepth": 5,
+    "minFilesForFolder": 2
+  },
+
+  "visualization": {
+    "maxNodes": 50,
+    "groupByFolder": true,
+    "highlightCircular": true
+  }
+}

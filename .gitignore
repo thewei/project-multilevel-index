@@ -1,0 +1,53 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Testing
+coverage/
+.nyc_output/
+test-output/
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+
+# Node modules (如果有测试相关的依赖)
+node_modules/
+
+# Generated files
+PROJECT_INDEX.md
+FOLDER_INDEX.md
+.claude-index-cache/
+
+# User-specific configuration
+.claude/settings.local.json
+
+# Backup files
+*.backup
+*.bak
+
+# OS generated files
+.Spotlight-V100
+.Trashes

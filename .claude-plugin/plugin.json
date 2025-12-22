@@ -1,0 +1,19 @@
+{
+  "name": "project-multilevel-index",
+  "version": "1.0.0",
+  "description": "分形多级索引系统 - 受《哥德尔、埃舍尔、巴赫》启发的自指文档系统。自动维护 PROJECT_INDEX、FOLDER_INDEX 和文件头注释，实现代码与文档的完美同步。",
+  "author": {
+    "name": "Claude Code Community"
+  },
+  "license": "MIT",
+  "keywords": [
+    "documentation",
+    "index",
+    "fractal",
+    "self-reference",
+    "dependency-graph",
+    "mermaid",
+    "GEB",
+    "architecture"
+  ]
+}
