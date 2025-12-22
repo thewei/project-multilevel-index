@@ -1,0 +1,70 @@
+{
+  "meta": {
+    "name": "Project Multi-level Index System",
+    "description": "Use this skill to maintain the fractal self-referential documentation system when users request \"initialize index\", \"update documentation\", \"generate dependency graph\", or when structural file changes are detected"
+  },
+  "coreIdea": {
+    "title": "Core Concept",
+    "subtitle": "A fractal documentation system inspired by Gödel, Escher, Bach:",
+    "principles": [
+      "**Self-similarity**: Each level (project→folder→file) has the same index structure",
+      "**Self-reference**: Each document declares \"update me when I change\"",
+      "**Polyphony**: Code and documentation echo each other, local affects global, global affects local"
+    ]
+  },
+  "indexStructure": {
+    "title": "Three-level Index Structure",
+    "projectIndex": {
+      "name": "PROJECT_INDEX.md (Root Index)",
+      "contains": [
+        "Project Overview",
+        "Architecture Description",
+        "Directory Structure",
+        "Dependency Graph (Mermaid)"
+      ]
+    },
+    "folderIndex": {
+      "name": "FOLDER_INDEX.md (Folder Index)",
+      "contains": [
+        "3-line architecture description",
+        "File list",
+        "Self-reference declaration"
+      ]
+    },
+    "fileHeader": {
+      "name": "File Header Comment",
+      "contains": [
+        "Input: External dependencies",
+        "Output: Exported content",
+        "Pos: Position in system",
+        "Self-reference declaration"
+      ]
+    }
+  },
+  "layerNames": {
+    "api": "API Layer",
+    "business": "Business Layer",
+    "data": "Data Layer",
+    "ui": "UI Layer",
+    "middleware": "Middleware Layer",
+    "utility": "Utility Layer",
+    "model": "Model Layer",
+    "controller": "Controller Layer",
+    "service": "Service Layer",
+    "repository": "Repository Layer"
+  },
+  "changeTypes": {
+    "structural": "Structural",
+    "header": "Header",
+    "implementation": "Implementation"
+  },
+  "updateRanges": {
+    "full": "File header + FOLDER_INDEX + PROJECT_INDEX",
+    "header": "File header only",
+    "none": "No update"
+  },
+  "excludePatterns": {
+    "directories": "node_modules, .git, dist, build, .next, target, vendor, __pycache__, .cache, coverage, .turbo, .venv, venv, pnpm-store, .yarn",
+    "fileTypes": ".js, .jsx, .ts, .tsx, .py, .java, .kt, .rs, .go, .cpp, .c, .h, .php, .rb, .swift, .cs"
+  }
+}

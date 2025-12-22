@@ -1,0 +1,59 @@
+{
+  "common": {
+    "autoUpdateNotice": "This comment is automatically updated when the file is modified, triggering FOLDER_INDEX and PROJECT_INDEX updates",
+    "autoUpdateNoticeShort": "This comment is automatically updated when the file is modified",
+    "inputLabel": "Input",
+    "outputLabel": "Output",
+    "posLabel": "Pos"
+  },
+  "javascript": {
+    "inputPlaceholder": "Dependencies, e.g.: lodash, ./utils, ../models/User",
+    "outputPlaceholder": "Exports, e.g.: createUser(), updateUser(), User type",
+    "posPlaceholder": "Position, e.g.: Business Layer-User Service, UI Layer-Button Component, Utility Layer-Date Formatter"
+  },
+  "python": {
+    "inputPlaceholder": "Imports, e.g.: os, typing, .models.user",
+    "outputPlaceholder": "Exports, e.g.: UserService class, get_user(), create_user()",
+    "posPlaceholder": "Position, e.g.: Business Layer-User Service, Data Layer-User Model"
+  },
+  "java": {
+    "inputPlaceholder": "Imports, e.g.: java.util.List, com.example.User",
+    "outputPlaceholder": "Public classes/interfaces, e.g.: UserService class, User interface",
+    "posPlaceholder": "Position, e.g.: Business Layer-User Service, Data Layer-User Repository"
+  },
+  "rust": {
+    "inputPlaceholder": "use imports, e.g.: std::collections::HashMap, crate::models::User",
+    "outputPlaceholder": "pub items, e.g.: UserService struct, create_user() function",
+    "posPlaceholder": "Position, e.g.: Business Layer-User Service, Data Layer-User Model"
+  },
+  "go": {
+    "inputPlaceholder": "import, e.g.: fmt, github.com/user/repo/models",
+    "outputPlaceholder": "Exported functions/types, e.g.: UserService struct, CreateUser() function",
+    "posPlaceholder": "Position, e.g.: Business Layer-User Service, Data Layer-User Model"
+  },
+  "cpp": {
+    "inputPlaceholder": "#include, e.g.: <vector>, \"user.h\", <iostream>",
+    "outputPlaceholder": "Public classes/functions, e.g.: UserService class, createUser() function",
+    "posPlaceholder": "Position, e.g.: Business Layer-User Service, Utility Layer-String Processing"
+  },
+  "php": {
+    "inputPlaceholder": "use imports, e.g.: Illuminate\\Support\\Facades\\DB",
+    "outputPlaceholder": "Classes/functions, e.g.: UserService class, createUser() method",
+    "posPlaceholder": "Position, e.g.: Business Layer-User Service, Controller-User Controller"
+  },
+  "ruby": {
+    "inputPlaceholder": "require imports, e.g.: active_record, ./models/user",
+    "outputPlaceholder": "Classes/modules, e.g.: UserService class, create_user method",
+    "posPlaceholder": "Position, e.g.: Business Layer-User Service, Model-User Model"
+  },
+  "swift": {
+    "inputPlaceholder": "import, e.g.: Foundation, UIKit",
+    "outputPlaceholder": "Public classes/protocols, e.g.: UserService class, User protocol",
+    "posPlaceholder": "Position, e.g.: Business Layer-User Service, UI Layer-User View Controller"
+  },
+  "csharp": {
+    "inputPlaceholder": "using, e.g.: System.Collections.Generic, MyApp.Models",
+    "outputPlaceholder": "Public classes/interfaces, e.g.: UserService class, IUserRepository interface",
+    "posPlaceholder": "Position, e.g.: Business Layer-User Service, Data Layer-User Repository"
+  }
+}

@@ -2,6 +2,13 @@
   "$schema": "https://json-schema.org/draft-07/schema#",
   "description": "项目多级索引系统配置文件 - 放置在 .claude/index-config.json",
 
+  "_readme": {
+    "note": "此配置文件为 v2.0 计划功能",
+    "currentVersion": "v1.0 - 配置文件功能尚未实现",
+    "usage": "v1.0 使用默认配置运行，无需此文件。v2.0 将支持自定义配置。",
+    "status": "该文件提供了未来版本的配置选项参考，当前版本会忽略此文件"
+  },
+
   "exclude": {
     "description": "排除规则配置",
     "patterns": [

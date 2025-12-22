@@ -1,0 +1,70 @@
+{
+  "meta": {
+    "name": "项目多级索引系统",
+    "description": "当用户请求\"初始化索引\"、\"更新文档\"、\"生成依赖图\"或检测到文件结构性变更时，使用此技能维护分形自指文档系统"
+  },
+  "coreIdea": {
+    "title": "核心理念",
+    "subtitle": "这是一个受《哥德尔、埃舍尔、巴赫》启发的分形文档系统：",
+    "principles": [
+      "**自相似性**：每个层级（项目→文件夹→文件）都有相同的索引结构",
+      "**自指性**：每个文档都声明\"当我变化时，更新我\"",
+      "**复调性**：代码与文档相互呼应，局部影响整体，整体影响局部"
+    ]
+  },
+  "indexStructure": {
+    "title": "三级索引结构",
+    "projectIndex": {
+      "name": "PROJECT_INDEX.md (根索引)",
+      "contains": [
+        "项目概览",
+        "架构说明",
+        "目录结构",
+        "依赖关系图 (Mermaid)"
+      ]
+    },
+    "folderIndex": {
+      "name": "FOLDER_INDEX.md (文件夹索引)",
+      "contains": [
+        "3行架构说明",
+        "文件清单",
+        "自指声明"
+      ]
+    },
+    "fileHeader": {
+      "name": "文件头注释",
+      "contains": [
+        "Input: 依赖的外部内容",
+        "Output: 对外提供的内容",
+        "Pos: 在系统中的定位",
+        "自指声明"
+      ]
+    }
+  },
+  "layerNames": {
+    "api": "API层",
+    "business": "业务层",
+    "data": "数据层",
+    "ui": "UI层",
+    "middleware": "中间件层",
+    "utility": "工具层",
+    "model": "模型层",
+    "controller": "控制层",
+    "service": "服务层",
+    "repository": "仓库层"
+  },
+  "changeTypes": {
+    "structural": "Structural",
+    "header": "Header",
+    "implementation": "Implementation"
+  },
+  "updateRanges": {
+    "full": "文件头 + FOLDER_INDEX + PROJECT_INDEX",
+    "header": "仅文件头",
+    "none": "不更新"
+  },
+  "excludePatterns": {
+    "directories": "node_modules, .git, dist, build, .next, target, vendor, __pycache__, .cache, coverage, .turbo, .venv, venv, pnpm-store, .yarn",
+    "fileTypes": ".js, .jsx, .ts, .tsx, .py, .java, .kt, .rs, .go, .cpp, .c, .h, .php, .rb, .swift, .cs"
+  }
+}

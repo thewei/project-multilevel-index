@@ -5,7 +5,8 @@
 > 受《哥德尔、埃舍尔、巴赫》启发的分形自指文档系统
 > 让代码项目如赋格曲般自我指涉、自我维护、优雅和谐
 
-[![Version](https://img.shields.io/badge/version-1.0.1-blue)](https://github.com/YOUR_USERNAME/project-multilevel-index/releases)
+[![Version](https://img.shields.io/badge/version-2.0.0-blue)](https://github.com/YOUR_USERNAME/project-multilevel-index/releases)
+[![I18N](https://img.shields.io/badge/i18n-zh--CN%20%7C%20en--US-orange)](I18N_GUIDE.md)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 [![Claude Code](https://img.shields.io/badge/Claude%20Code-Plugin-purple)](https://claude.com/claude-code)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
@@ -46,6 +47,13 @@ PROJECT_INDEX.md (根索引)
 - **🔄 自相似性**：每个层级都有相同的索引结构
 - **🪞 自指性**：每个文档都声明"当我变化时，更新我"
 - **🎼 复调性**：代码与文档相互呼应，局部影响整体
+
+### 🌍 v2.0 新特性
+
+- **完整国际化**: 支持中英文双语切换
+- **模块化架构**: SKILL.md 从 1098行 精简到 200行
+- **命令独立**: 每个命令都有详细实现文档
+- **新命令**: `/set-language` 快速切换语言
 
 ---
 

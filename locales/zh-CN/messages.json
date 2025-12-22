@@ -1,0 +1,64 @@
+{
+  "commands": {
+    "initIndex": {
+      "confirmDirectory": "当前目录是 {directory}, 确认这是项目根目录吗？",
+      "scanning": "正在扫描项目...",
+      "found": "发现:",
+      "fileCount": "{language}: {count} 文件",
+      "totalFiles": "总计 {count} 个代码文件，分布在 {folders} 个文件夹",
+      "generating": "正在生成索引系统...",
+      "complete": "✅ 完成！已创建 PROJECT_INDEX.md，请查看项目架构。",
+      "summary": "已生成:",
+      "fileHeaders": "{count} 个文件头注释",
+      "folderIndexes": "{count} 个 FOLDER_INDEX.md",
+      "projectIndex": "1 个 PROJECT_INDEX.md",
+      "dependencyGraph": "依赖关系图包含 {nodes} 个节点",
+      "nextSteps": "- 使用 /update-index 手动更新索引\n- 使用 /check-index 检查一致性"
+    },
+    "updateIndex": {
+      "detecting": "检测到 {count} 个文件变更:",
+      "analyzing": "正在分析变更类型...",
+      "updated": "已更新:",
+      "updatedItems": "文件头注释、{folder}/FOLDER_INDEX.md、PROJECT_INDEX.md",
+      "silent": "[索引系统] 已自动更新 {file} 的索引",
+      "structural": "[索引系统] 检测到结构性变更，已自动更新索引",
+      "elapsed": "耗时: {time} 秒"
+    },
+    "checkIndex": {
+      "title": "索引一致性检查报告",
+      "checking": "正在检查索引系统...",
+      "fileHeaderIntegrity": "文件头完整性",
+      "folderIndex": "文件夹索引",
+      "dependencies": "依赖关系",
+      "structure": "索引结构",
+      "allGood": "✅ 所有文件包含 Input/Output/Pos 注释",
+      "missing": "⚠️ {count} 个文件缺少文件头注释",
+      "circularDep": "⚠️ 依赖关系: 发现 {count} 个循环依赖",
+      "suggestions": "建议:",
+      "runUpdate": "运行 /update-index 自动修复",
+      "perfect": "🎉 索引系统运行完美！"
+    }
+  },
+  "notifications": {
+    "indexUpdated": "[索引系统] 已自动更新 {file} 的索引",
+    "structuralChange": "[索引系统] 检测到结构性变更，已自动更新索引",
+    "skipped": "[索引系统] 跳过更新（无结构变更）"
+  },
+  "errors": {
+    "fileNotFound": "文件未找到: {file}",
+    "invalidConfig": "配置文件无效: {file}",
+    "parseError": "解析错误: {message}",
+    "timeout": "扫描时间较长，建议使用 --exclude 排除大目录",
+    "circularDep": "检查 import 路径是否正确"
+  },
+  "prompts": {
+    "overwriteManualEdit": "检测到手动编辑的 FOLDER_INDEX.md，是否覆盖？\n[1] 覆盖（使用自动生成内容）\n[2] 合并（保留手动内容）\n[3] 跳过（不更新此文件）",
+    "continueOnError": "发现 {count} 个文件解析失败，是否继续？"
+  },
+  "folderIndex": {
+    "selfReference": "⚠️ **自指声明**: 当本文件夹内容变化时，请更新此索引"
+  },
+  "projectIndex": {
+    "selfReference": "⚠️ **自指声明**: 任何功能、架构、写法更新必须在工作结束后更新此文档"
+  }
+}

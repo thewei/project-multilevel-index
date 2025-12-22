@@ -4,6 +4,32 @@
 
 ---
 
+## [1.0.2] - 2025-12-22
+
+### 🐛 Bug 修复
+
+- **[关键]** 修复 hooks.json 中缺少 `.jsx` 和 `.tsx` 扩展名的问题（影响 React/TypeScript 项目的自动更新功能）
+- 补全 skill.json 中的文件类型列表（添加 .php, .rb, .swift, .cs）
+- 更新排除目录列表，添加现代化工具目录（.turbo, .venv, coverage, pnpm-store, .yarn 等）
+
+### 📝 文档改进
+
+- 在 commands/*.md 中添加版本说明块，明确区分已实现功能和 v2.0 计划功能
+- 在 index-config.example.json 中添加 `_readme` 说明，标注为 v2.0 计划功能
+- 新增 BUG_FIXES_v1.0.2.md 详细修复报告
+
+### 🎯 影响
+
+- React/TypeScript 项目现在可以正常使用 PostToolUse Hook 自动更新功能
+- 文档与实际实现的一致性大幅提升
+- 用户清楚知道哪些功能已实现，哪些是计划功能
+
+### ⚡ 性能
+
+- 改进的排除目录规则提升大型项目扫描性能
+
+---
+
 ## [1.0.0] - 2025-12-22
 
 ### 🎉 首次发布

@@ -1,0 +1,37 @@
+{
+  "postToolUse": {
+    "title": "File Modification Detection",
+    "description": "Execute index update check",
+    "filterRules": {
+      "title": "Filter Rules",
+      "subtitle": "(skip if any condition is met)",
+      "skipConditions": [
+        "File name is PROJECT_INDEX.md or FOLDER_INDEX.md",
+        "File extension is not a code file (.js/.ts/.py/.java/.rs/.go/.cpp/.c/.h/.kt/.rb/.php/.swift/.cs)",
+        "File path contains: node_modules, .git, dist, build, .next, target, vendor, __pycache__, .cache",
+        "File size > 500KB (performance protection)"
+      ]
+    },
+    "structuralChange": {
+      "title": "Structural Change Detection",
+      "subtitle": "(must contain any of the following keywords)",
+      "keywords": [
+        "Dependencies: import, require, use, from, #include, using",
+        "Exports: export, public, class, interface, function, def, fn, async, struct"
+      ]
+    },
+    "updateStrategy": {
+      "title": "Update Strategy",
+      "strategies": [
+        "Structural change detected → Update file header + FOLDER_INDEX + PROJECT_INDEX",
+        "Header-only change → Update file header only",
+        "Other cases → Skip"
+      ]
+    },
+    "output": "Silent processing, only prompt when major changes occur.",
+    "reference": "See skills/project-multilevel-index/SKILL.md for details."
+  },
+  "stop": {
+    "message": "Session end check: If 3+ code files were modified, briefly ask user if /check-index is needed. Keep it short, don't prompt if no obvious issues."
+  }
+}

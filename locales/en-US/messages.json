@@ -1,0 +1,64 @@
+{
+  "commands": {
+    "initIndex": {
+      "confirmDirectory": "Current directory is {directory}, confirm this is the project root?",
+      "scanning": "Scanning project...",
+      "found": "Found:",
+      "fileCount": "{language}: {count} files",
+      "totalFiles": "Total {count} code files across {folders} folders",
+      "generating": "Generating index system...",
+      "complete": "✅ Complete! Created PROJECT_INDEX.md, check project architecture.",
+      "summary": "Generated:",
+      "fileHeaders": "{count} file header comments",
+      "folderIndexes": "{count} FOLDER_INDEX.md files",
+      "projectIndex": "1 PROJECT_INDEX.md",
+      "dependencyGraph": "Dependency graph contains {nodes} nodes",
+      "nextSteps": "- Use /update-index to manually update index\n- Use /check-index to check consistency"
+    },
+    "updateIndex": {
+      "detecting": "Detected {count} file changes:",
+      "analyzing": "Analyzing change types...",
+      "updated": "Updated:",
+      "updatedItems": "File header, {folder}/FOLDER_INDEX.md, PROJECT_INDEX.md",
+      "silent": "[Index System] Automatically updated index for {file}",
+      "structural": "[Index System] Detected structural change, automatically updated index",
+      "elapsed": "Time elapsed: {time} seconds"
+    },
+    "checkIndex": {
+      "title": "Index Consistency Check Report",
+      "checking": "Checking index system...",
+      "fileHeaderIntegrity": "File Header Integrity",
+      "folderIndex": "Folder Index",
+      "dependencies": "Dependencies",
+      "structure": "Index Structure",
+      "allGood": "✅ All files contain Input/Output/Pos comments",
+      "missing": "⚠️ {count} files missing file header comments",
+      "circularDep": "⚠️ Dependencies: Found {count} circular dependencies",
+      "suggestions": "Suggestions:",
+      "runUpdate": "Run /update-index to auto-fix",
+      "perfect": "🎉 Index system running perfectly!"
+    }
+  },
+  "notifications": {
+    "indexUpdated": "[Index System] Automatically updated index for {file}",
+    "structuralChange": "[Index System] Detected structural change, automatically updated index",
+    "skipped": "[Index System] Skipped update (no structural changes)"
+  },
+  "errors": {
+    "fileNotFound": "File not found: {file}",
+    "invalidConfig": "Invalid configuration file: {file}",
+    "parseError": "Parse error: {message}",
+    "timeout": "Scan taking long, suggest using --exclude to exclude large directories",
+    "circularDep": "Check if import paths are correct"
+  },
+  "prompts": {
+    "overwriteManualEdit": "Detected manually edited FOLDER_INDEX.md, overwrite?\n[1] Overwrite (use auto-generated content)\n[2] Merge (keep manual content)\n[3] Skip (don't update this file)",
+    "continueOnError": "Found {count} files with parse errors, continue?"
+  },
+  "folderIndex": {
+    "selfReference": "⚠️ **Self-reference**: Update this index when folder content changes"
+  },
+  "projectIndex": {
+    "selfReference": "⚠️ **Self-reference**: Any feature, architecture, or implementation update must update this document after work is done"
+  }
+}

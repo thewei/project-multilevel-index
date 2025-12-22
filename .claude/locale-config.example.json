@@ -1,0 +1,7 @@
+{
+  "language": "zh-CN",
+  "fallback": "zh-CN",
+  "description": "项目多级索引系统语言配置 / Language configuration for project multi-level index system",
+  "availableLanguages": ["zh-CN", "en-US"],
+  "comment": "修改 language 字段为 'en-US' 切换到英文 / Change language field to 'en-US' to switch to English"
+}

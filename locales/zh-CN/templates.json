@@ -1,0 +1,59 @@
+{
+  "common": {
+    "autoUpdateNotice": "本注释在文件修改时自动更新，同时触发 FOLDER_INDEX 和 PROJECT_INDEX 更新",
+    "autoUpdateNoticeShort": "本注释在文件修改时自动更新",
+    "inputLabel": "Input",
+    "outputLabel": "Output",
+    "posLabel": "Pos"
+  },
+  "javascript": {
+    "inputPlaceholder": "依赖模块列表，如: lodash, ./utils, ../models/User",
+    "outputPlaceholder": "导出内容，如: createUser(), updateUser(), User 类型",
+    "posPlaceholder": "定位，如: 业务层-用户管理服务, UI层-按钮组件, 工具层-日期格式化"
+  },
+  "python": {
+    "inputPlaceholder": "导入模块，如: os, typing, .models.user",
+    "outputPlaceholder": "导出函数/类，如: UserService 类, get_user(), create_user()",
+    "posPlaceholder": "定位，如: 业务层-用户服务, 数据层-用户模型"
+  },
+  "java": {
+    "inputPlaceholder": "导入包，如: java.util.List, com.example.User",
+    "outputPlaceholder": "public 类/接口，如: UserService 类, User 接口",
+    "posPlaceholder": "定位，如: 业务层-用户服务, 数据层-用户仓库"
+  },
+  "rust": {
+    "inputPlaceholder": "use 导入，如: std::collections::HashMap, crate::models::User",
+    "outputPlaceholder": "pub 项，如: UserService 结构, create_user() 函数",
+    "posPlaceholder": "定位，如: 业务层-用户服务, 数据层-用户模型"
+  },
+  "go": {
+    "inputPlaceholder": "import 导入，如: fmt, github.com/user/repo/models",
+    "outputPlaceholder": "导出函数/类型，如: UserService 结构, CreateUser() 函数",
+    "posPlaceholder": "定位，如: 业务层-用户服务, 数据层-用户模型"
+  },
+  "cpp": {
+    "inputPlaceholder": "#include，如: <vector>, \"user.h\", <iostream>",
+    "outputPlaceholder": "public 类/函数，如: UserService 类, createUser() 函数",
+    "posPlaceholder": "定位，如: 业务层-用户服务, 工具层-字符串处理"
+  },
+  "php": {
+    "inputPlaceholder": "use 导入，如: Illuminate\\Support\\Facades\\DB",
+    "outputPlaceholder": "类/函数，如: UserService 类, createUser() 方法",
+    "posPlaceholder": "定位，如: 业务层-用户服务, 控制器-用户控制器"
+  },
+  "ruby": {
+    "inputPlaceholder": "require 导入，如: active_record, ./models/user",
+    "outputPlaceholder": "类/模块，如: UserService 类, create_user 方法",
+    "posPlaceholder": "定位，如: 业务层-用户服务, 模型-用户模型"
+  },
+  "swift": {
+    "inputPlaceholder": "import 导入，如: Foundation, UIKit",
+    "outputPlaceholder": "public 类/协议，如: UserService 类, User 协议",
+    "posPlaceholder": "定位，如: 业务层-用户服务, UI层-用户视图控制器"
+  },
+  "csharp": {
+    "inputPlaceholder": "using 导入，如: System.Collections.Generic, MyApp.Models",
+    "outputPlaceholder": "public 类/接口，如: UserService 类, IUserRepository 接口",
+    "posPlaceholder": "定位，如: 业务层-用户服务, 数据层-用户仓库"
+  }
+}
