@@ -1,12 +1,24 @@
 {
   "name": "project-multilevel-index",
+  "displayName": "Project Multi-level Index System",
   "version": "1.0.2",
   "description": "分形多级索引系统 - 受《哥德尔、埃舍尔、巴赫》启发的自指文档系统。自动维护 PROJECT_INDEX、FOLDER_INDEX 和文件头注释，实现代码与文档的完美同步。",
+  "longDescription": "A fractal self-referential documentation system for Claude Code. Automatically maintains three-level indices (PROJECT_INDEX.md, FOLDER_INDEX.md, file headers) with dependency analysis, Mermaid graphs, and auto-update hooks. Supports 10 programming languages with full i18n (zh-CN/en-US).",
   "author": {
-    "name": "Claude Code Community"
+    "name": "Claude Code Community",
+    "url": "https://github.com/Claudate/project-multilevel-index"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Claudate/project-multilevel-index.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Claudate/project-multilevel-index/issues"
+  },
+  "homepage": "https://github.com/Claudate/project-multilevel-index#readme",
   "license": "MIT",
   "keywords": [
+    "claude-code-plugin",
     "documentation",
     "index",
     "fractal",
@@ -14,6 +26,19 @@
     "dependency-graph",
     "mermaid",
     "GEB",
-    "architecture"
+    "architecture",
+    "auto-update",
+    "i18n",
+    "typescript",
+    "javascript",
+    "python"
+  ],
+  "engines": {
+    "claude-code": ">=1.0.0"
+  },
+  "categories": [
+    "Documentation",
+    "Productivity",
+    "Visualization"
   ]
 }

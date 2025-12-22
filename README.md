@@ -3,18 +3,30 @@
 <div align="center">
 
 > 受《哥德尔、埃舍尔、巴赫》启发的分形自指文档系统
+>
 > 让代码项目如赋格曲般自我指涉、自我维护、优雅和谐
 
-[![Version](https://img.shields.io/badge/version-2.0.0-blue)](https://github.com/YOUR_USERNAME/project-multilevel-index/releases)
+[![Version](https://img.shields.io/badge/version-1.0.2-blue)](https://github.com/Claudate/project-multilevel-index/releases)
 [![I18N](https://img.shields.io/badge/i18n-zh--CN%20%7C%20en--US-orange)](I18N_GUIDE.md)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
-[![Claude Code](https://img.shields.io/badge/Claude%20Code-Plugin-purple)](https://claude.com/claude-code)
+[![Claude Code](https://img.shields.io/badge/Claude%20Code-Plugin-purple)](https://claude.ai/code)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
-[![GitHub Stars](https://img.shields.io/github/stars/YOUR_USERNAME/project-multilevel-index?style=social)](https://github.com/YOUR_USERNAME/project-multilevel-index)
 
-[English](README.md) | [简体中文](README_zh-CN.md)
+**🔧 Claude Code 插件** | [简体中文](#) | [English](README_EN.md)
 
 </div>
+
+---
+
+## ⚠️ 重要说明
+
+**这是一个 Claude Code 插件项目，不是独立工具！**
+
+- ✅ **需要安装 Claude Code**: https://claude.ai/code
+- ❌ **不支持 Cursor、Windsurf、VSCode** (计划 v2.1 支持)
+- 📦 **安装位置**: `~/.claude/plugins/` (Claude Code 插件目录)
+
+---
 
 ---
 
